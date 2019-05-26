@@ -13,5 +13,25 @@ static final int b = 2;
 
 #### final
 ```
-Class Test
+Class Test {
+  public final int a;
+}
+
+Test t1 = new test();
+t1.a = 10;
+Test t2 = new Test();
+t2.a = 20;
 ``` 
+
+#### static final
+```
+Class StaticTest {
+  public static final int a;
+}
+
+Test t1 = new Test();
+t1.a = 10;
+Test t2 = new Test();
+t2.a = 20;  → Error! 이미 첫번째 객체 생성이 있었기 때문에, 더 이상 값을 등록할 수 없다.
+```
+
